@@ -2,8 +2,10 @@ import { randomUUID } from 'node:crypto';
 import { db } from './db.js'
 
 export class DatabaseMYSQL{
+
+    // Criação de novo usuario
     async createUser(user){
-        const userId = randomUUID();
+        const userId = randomUUID(); 
         const { nome, email, telefone } = user;
 
         await db.execute(
@@ -11,4 +13,8 @@ export class DatabaseMYSQL{
             [userId, nome, email, telefone]
         )
     }
+
+    // listar usuarios
+
+
 }

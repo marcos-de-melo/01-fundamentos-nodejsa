@@ -1,5 +1,5 @@
 # Home
-GET http://localhost:3000/djslkfjk
+GET http://localhost:3000/users
 
 ###
 
@@ -12,8 +12,8 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "nome": "Juliana MElo",
-    "email": "ju@gmail.com",
+    "nome": "Galvão Bueno",
+    "email": "gb@gmail.com",
     "telefone":"(99) 99999-9998"
 }
 
