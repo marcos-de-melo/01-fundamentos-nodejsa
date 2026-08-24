@@ -1,0 +1,26 @@
+# Home
+GET http://localhost:3000/djslkfjk
+
+###
+
+# Lista de uruários
+GET http://localhost:3000/users?nome=marcos&email=marcos@gmail.com
+
+###
+# Cadastro de Usuarios
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "nome": "Juliana MElo",
+    "email": "ju@gmail.com",
+    "telefone":"(99) 99999-9998"
+}
+
+###
+# ROUTE PARAMS
+GET http://localhost:3000/users/57
+
+###
+
+GET http://localhost:3000/users/44/pedidos/8758
