@@ -5,6 +5,8 @@ const database = new DatabaseMYSQL();
 server.get('/', (req, res)=>{
     return 'Home';
 });
+
+// Lista de Usuários
 server.get('/users', (req, res)=>{
     const { nome, email, telefone} = req.query;
     return `Lista de Usuarios Pesquisa por nome: ${nome} -email: ${email}`;
